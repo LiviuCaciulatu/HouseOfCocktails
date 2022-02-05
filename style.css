@@ -1,0 +1,99 @@
+body, html {
+  height: 100%;
+  background-color: #212529;
+  margin-top: 25px
+}
+
+.navbar{
+  font-family: "Roboto";
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 10000;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("img/img1.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.caption{
+  position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: "Roboto";
+    font-size: 4rem;
+}
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    margin: 0;
+}
+.caption {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 4s; /* don't forget to set a duration! */
+}
+.container{
+  text-align: center;
+  color: #FFBF00;
+}
+.bkimg2{
+  background-image: url(img/img6.jpg);
+  min-height: 500px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0.5rem;
+
+  animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.5s; /* don't forget to set a duration! */
+}
+img{
+  filter: grayscale(80%);
+  margin: 10px;
+}
+img:hover{
+  filter: none;
+  transform: scale(1.05);
+  transition-duration: 1.5s;
+}
+.btn{
+  background-color: #212529;
+  color: #FFBF00;
+}
+.btn:hover{
+  background-color:#FFBF00;
+  color:#212529;
+}
+form input{
+  background-color: #FFBF00;
+  color: #212529;
+}
